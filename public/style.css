@@ -1,0 +1,216 @@
+/*==Reset CSS==*/
+* {
+   
+    padding: 0;
+  }
+  body {
+    background-color: black;
+    width: 100%;
+  }
+.header {
+    background-color: tomato;
+    width: 100%;
+    margin-top: -16px;
+}
+
+#tophd {
+    background-color: thistle;
+    width: 100%;
+}
+
+#left_header {
+    width: 50%;
+    float: left;
+}
+
+#right_header {
+    width: 50%;
+    float: left;
+}
+
+#logo {
+    width: 100%;
+    height: 120px;
+}
+/* --------- TITLE ----------*/
+#title {
+   
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    float: left;
+    padding: 0;
+    margin-top: -3px;
+}
+
+#topTitle{
+    width: 50%;
+    font-size: 20px;
+    margin: auto;
+}
+a{
+    color: black;
+}
+    /*--------MENU-----------*/
+    #menu{
+        font-weight: bolder;
+        font-size: 22px;
+    }
+#menu ul {
+        background: rgb(250, 0, 0);
+        list-style-type: none;
+        text-align: center;
+      }
+ #menu li {
+        color: #f1f1f1;
+        display: inline-block;
+        width: 120px;
+        height: 40px;
+        line-height: 40px;
+        margin-left: -5px;
+      }
+      #menu a {
+        text-decoration: none;
+        color: #fff;
+       
+      }
+      #menu a:hover {
+        background: #F1F1F1;
+        color: #333;
+      }
+      .sub-menu li {
+        display: none;
+      }
+      #menu li {
+        position: relative;
+       }
+       .sub-menu {
+        display: none;
+        position: absolute;
+       }
+       #menu li:hover .sub-menu {
+ display: block;
+}
+.sub-menu li {
+    margin-left: 0 !important;
+   }
+#menuList a{
+    
+    text-decoration: none;
+    background-color:rgb(250, 250, 151);
+}
+#menuList a:hover {
+    background: #ae27cf;
+    color: #333;
+   
+}
+
+.homepage{
+    min-height: 380px;
+    width: 96%;
+    margin: auto;
+}
+.homepage p{
+    margin: auto;
+    width: 60%;
+}
+#content {
+    width: 100%;
+    min-height: 380px;
+    position: inherit;
+    float: left;
+}
+#topct{
+   text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+
+#leftct {
+    float: left;
+    width: 20%;
+}
+
+#imgava {
+    border-radius: 50%;
+    height: 2em;
+}
+#imgshow{
+  width: 200px;
+  border-radius: 50%;
+
+}
+
+#positionAva,
+#positionInfo {
+    height: 50px;
+    font-size: 20px;
+   padding: 2px;
+}
+
+#addInfo {
+    width: 96%;
+    margin: auto;
+    padding: 0;
+    min-height: 380px;
+}
+#addct{
+    background-color: rgb(190, 246, 190);
+}
+form {
+    margin:auto;
+    font-size: 20px;
+    width: 96%;
+}
+
+#fieldName {
+   
+    padding: 0;
+    background-color:rgb(93, 124, 105);
+    text-align: center;
+    color: #f1f1f1;
+}
+#fieldInfo{
+    background-color: rgb(190, 246, 190);
+}
+#tableOutput {
+    width: 96%;
+    border: 1px;
+    font-weight: bold;
+    font-size: 20px;
+    margin: auto;
+    
+    
+}
+#tableInput{
+    font-weight: bold;
+    font-size: 20px;
+    margin: auto;
+    text-align: left;
+    min-height: 380px;
+    
+}
+input {
+    width: 15em;
+    height: 1.5em;
+    font-weight: bold;
+    border-radius: 5px 5px;
+    text-align: justify;
+}
+button{
+    background-color: whitesmoke;
+    color:  rgb(29, 5, 5);;
+    width: 100px;
+    
+    text-align: center;
+    font-weight: bolder;
+    border: burlywood solid 2px;
+    border-radius: 10px 5px;
+}
+#thongtinkhac,#lienHe{
+    color: ivory;
+    text-align: center;
+    font-size: 10px;
+}
+

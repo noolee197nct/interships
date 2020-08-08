@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<%- include('./elements/head'); -%>
+	<body>
+		<%- include('./elements/header'); -%>
+		<%- include('./elements/title'); -%>
+		<div id="content">
+			<div id="addInfo">
+				<div id="addct">
+					<form action="./add" method="post" onsubmit="return validateForm()" enctype="multipart/form-data">
+						<table id="tableInput">
+							<br>
+							<B><I>&nbsp; Nhập thông tin thực tập sinh theo mẫu:</I></B>
+							<br>
+							<br>
+							<tr>
+								<td>Họ và tên </td>
+								<td><input type="text" name="txtName" id="txtName" placeholder="vd: Nguyễn Văn A"></td>
+							</tr>
+							<tr>
+								<td>Giới tính </td>
+								<td>
+									<input type="text" name="txtSex" id="txtSex"placeholder="vd: Nam">
+								</td>
+							</tr>
+							<tr>
+								<td>Ngày sinh </td>
+								<td><input type="date" name="txtBirthDay" id="txtBirthDay"> </td>
+								<!-- <td><input type="text" name="txtBirthDay" id="txtBirthDay"placeholder="vd: 01/01/2000" pattern="[0-3]{1}[0-9]{1}/[0-1]{1}[0-9]{1}/[0-9]{4}"> </td> -->
+							</tr>
+							<tr>
+								<td>Số điện thoại &nbsp;</td>
+								<td><input type="tel" name="txtPhoneNum" id="txtPhoneNum"placeholder="vd: 099999999"> </td>
+							</tr>
+							<tr>
+								<td>Email </td>
+								<td><input type="email" name="txtEmail" id="txtEmail"placeholder="vd: nca@gmail.com"></td>
+							</tr>
+							<tr>
+								<td>Link FB </td>
+								<td><input type="text" name="txtLinkFb" id="txtLinkFb"placeholder="vd: https://facebook.com/nva"></td>
+							</tr>
+							<tr>
+								<!-- <td>Ảnh hiển thị </td>
+									<td><input type="file" name="imgName"></td>
+									</tr> -->
+							<tr>
+								<td></td>
+								<td> <button  type="submit">Thêm</button></td>
+							</tr>
+						</table>
+						<br>
+					</form>
+				</div>
+			</div>
+		</div>
+		<%- include('./elements/footer'); -%>
+	</body>
+</html>

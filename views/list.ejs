@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<%- include('./elements/head'); -%>
+	<body>
+		<%- include('./elements/header'); -%>
+		<%- include('./elements/title'); -%>
+		<div id="content">
+			<table id="tableOutput">
+				<tr id="fieldName">
+					<!-- <th>Avatar</th> -->
+					<th>Họ tên</th>
+					<th>Giới tính</th>
+					<th>Ngày sinh</th>
+					<th>Điện thoại</th>
+					<th>Email</th>
+					<th>Facebook</th>
+					<th></th>
+				</tr>
+				<tr id="fieldInfo">
+					<!-- Hiển thị ảnh ra màn hình  -->
+					<!-- <td> 
+						<% danhsach.forEach(function(intership){ %>
+						<div id="positionAva">
+						    <img src="./upload/<%- intership.Img %>" alt="" id="imgava">
+						</div>
+						<% }); %>
+						</td> -->
+					<td>
+						<% danhsach.forEach(function(intership){ %>
+						<div id="positionInfo">
+							<b>&nbsp;  <%- intership.Name %></b> 
+						</div>
+						<% }); %>
+					</td>
+					<td>
+						<% danhsach.forEach(function(intership){ %>
+						<div id="positionInfo">
+							&nbsp;     <b><%- intership.Sex %></b>
+						</div>
+						<% }); %>
+					</td>
+					<td>
+						<% danhsach.forEach(function(intership){ %>
+						<div id="positionInfo">
+							&nbsp;    <b> <%- intership.BirthDay %> </b>
+						</div>
+						<% }); %>
+					</td>
+					<td>
+						<% danhsach.forEach(function(intership){ %>
+						<div id="positionInfo">
+							&nbsp;    <b> <%- intership.PhoneNum %> </b>
+						</div>
+						<% }); %>
+					</td>
+					<td>
+						<% danhsach.forEach(function(intership){ %>
+						<div id="positionInfo">
+							&nbsp;   <b> <%- intership.Email %> </b> 
+						</div>
+						<% }); %>
+					</td>
+					<td>
+						<% danhsach.forEach(function(intership){ %>
+						<div id="positionInfo">
+							&nbsp;    <a href="<%- intership.Linkfb %>" target="_blank" ><%- intership.Linkfb %></a>
+						</div>
+						<% }); %>
+					</td>
+					<td>
+						<% danhsach.forEach(function(intership){ %>
+						<div id="positionInfo">
+							<div id= "menuList">
+								&nbsp;<a href="/edit/<%- intership._id %>"> &#128398;Sửa </a>
+								&nbsp;<a onclick="return confirm('Xóa <%- intership.Name %> ?')" href="/delete/<%- intership._id %>"> &#128465;Xóa </a>
+							</div>
+						</div>
+						<% }); %>
+					</td>
+				</tr>
+			</table>
+		</DIV>
+		<%- include('./elements/footer'); -%>
+	</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<%- include('./elements/head'); -%>
+	<body>
+		<%- include('./elements/header'); -%>
+		<%- include('./elements/title'); -%>
+		<div id="content">
+			<div id="addInfo">
+				<div id="addct">
+					<form action="./edit" method="post" onsubmit="return validateForm()" enctype="multipart/form-data">
+						<table id="tableInput">
+							<br>
+							<B><I>&nbsp; Đang sửa thông tin của: </I><%- thuctapsinh.Name %></B>
+							<br>
+							<br>
+							<tr>
+								<input type="hidden" value="<%- thuctapsinh._id %>"name="txtHidden">
+								<td>Họ và tên </td>
+								<td><input type="text" name="txtName"  value="<%- thuctapsinh.Name %>" id="txtName" placeholder=" <%- thuctapsinh.Name %>"></td>
+							</tr>
+							<tr>
+								<td>Giới tính </td>
+								<td><input type="text"name="txtSex"  value="<%- thuctapsinh.Sex %>" id="txtSex"placeholder=" <%- thuctapsinh.Sex %>"></td>
+							</tr>
+							<tr>
+								<td>Ngày sinh </td>
+								<td><input type="date" name="txtBirthDay" value="<%- thuctapsinh.BirthDay %>" id="txtBirthDay"placeholder=" <%- thuctapsinh.BirthDay %>"> </td>
+							</tr>
+							<tr>
+								<td>Số điện thoại &nbsp;</td>
+								<td><input type="text" name="txtPhoneNum"value="<%- thuctapsinh.PhoneNum %>"id="txtPhoneNum"placeholder=" <%- thuctapsinh.PhoneNum %>"> </td>
+							</tr>
+							<tr>
+								<td>Email </td>
+								<td><input type="email" name="txtEmail"value="<%- thuctapsinh.Email %>"id="txtEmail"placeholder=" <%- thuctapsinh.Email %>"></td>
+							</tr>
+							<tr>
+								<td>Link FB </td>
+								<td><input type="text" name="txtLinkFb"value="<%- thuctapsinh.Linkfb %>"id="txtLinkFb"placeholder=" <%- thuctapsinh.Linkfb %>"></td>
+							</tr>
+							<tr>
+								<!-- <td>Ảnh hiển thị </td>
+									<td><input type="file" name="imgName"></td>
+									</tr> -->
+							<tr>
+								<td></td>
+								<td> <button type="submit">Cập nhật &#128427;</button></td>
+							</tr>
+						</table>
+						<br>
+					</form>
+				</div>
+			</div>
+		</div>
+		<%- include('./elements/footer'); -%>
+	</body>
+</html>

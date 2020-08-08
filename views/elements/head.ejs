@@ -1,0 +1,38 @@
+<head>
+    <base href="https://nctql.herokuapp.com/">
+    <title><%= title %></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script language="javascript">
+        function validateForm() {
+
+            var txtName = document.getElementById('txtName').value;
+            var txtSex = document.getElementById('txtSex').value;
+            var txtBirthDay = document.getElementById('txtBirthDay').value;
+            var txtPhoneNum = document.getElementById('txtPhoneNum').value;
+            var txtEmail = document.getElementById('txtEmail').value;
+            var txtLinkFb = document.getElementById('txtLinkFb').value;
+
+            if (txtName == '') {
+                alert('Bạn chưa nhập họ tên. ');
+            }
+            else if (txtSex =='') {
+                alert('Bạn chưa nhập giới tính.');
+            }
+            else if (txtBirthDay == '') {
+                alert("Bạn chưa nhập ngày sinh.")
+            } else if (txtPhoneNum == '') {
+                alert("Bạn chưa nhập số điện thoại")
+            } else if (txtEmail == '') {
+                alert("Bạn chưa nhập Email.")
+            } else if (txtLinkFb == '') {
+                alert('Bạn chưa nhập địa chỉ Facebook.')
+            }
+            else {
+                return true;
+            }
+            return false;
+        }
+    </script>
+</head>
